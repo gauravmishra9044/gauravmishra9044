@@ -1,0 +1,36 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='get-warranty'}"/>
+    <sly data-sly-call="${clientlib.js @ categories='get-warranty'}"/>
+</sly>
+
+<div class="search-page">
+    <div class="search-page__heading">All Warranty Details</div>
+    <div class="search-bar">
+        <select name="category" id="category" class="search-bar__select">
+            <option value="modelId">Model ID</option>
+            <option value="productId">Product ID</option>
+            <option value="dealerId">Dealer ID</option>
+            <option value="startDate">Warranty Start</option>
+            <option value="endDate">Warranty End</option>
+        </select>
+        <input type="search" name="searchId" id="search" class="search-bar__input" placeholder="Enter Model ID">
+    </div>
+    <div class="search-results">
+        <table>
+            <thead>
+            <tr>
+                <th>Model ID</th>
+                <th>Product ID</th>
+                <th>Dealer ID</th>
+                <th>Warranty Start</th>
+                <th>Warranty End</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="no-data">
+                <td colspan="5" style="text-align: center;">No result found</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

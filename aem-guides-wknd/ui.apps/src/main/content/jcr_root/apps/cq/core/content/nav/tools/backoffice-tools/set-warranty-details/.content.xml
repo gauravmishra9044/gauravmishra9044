@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:description="Enter warranty details"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Set Warranty Details"
+    href="/apps/backoffice-tools/content/set-warranty-details.html"
+    icon="add"
+    id="set-warranty-details"/>

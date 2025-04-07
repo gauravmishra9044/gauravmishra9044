@@ -1,0 +1,5 @@
+{
+  "enabled": true,
+  "cron_expression": "*/12 * * * * ?",
+  "subservice_name": "sitemap-service-user"
+}

@@ -1,0 +1,63 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='set-warranty'}"/>
+    <sly data-sly-call="${clientlib.js @ categories='set-warranty'}"/>
+</sly>
+
+<div class="warranty-form">
+    <div class="form-header">Add Warranty Details</div>
+    <div class="form-container">
+        <form id="warrantyForm" class="form">
+            <div class="form-group">
+                <input
+                        type="text"
+                        name="modelId"
+                        id="modelId"
+                        placeholder="Model ID"
+                />
+                <span class="error-message" id="modelIdError"></span>
+            </div>
+
+            <div class="form-group">
+                <input
+                        type="text"
+                        name="productId"
+                        id="productId"
+                        placeholder="Product Id"
+                />
+                <span class="error-message" id="productIdError"></span>
+            </div>
+
+            <div class="form-group">
+                <input
+                        type="text"
+                        name="dealerId"
+                        id="dealerId"
+                        placeholder="DealerId"
+                />
+                <span class="error-message" id="dealerError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="startDate">Start Date*</label>
+                <input
+                        type="date"
+                        name="startDate"
+                        id="startDate"
+                />
+                <span class="error-message" id="startDateError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="endDate">End Date*</label>
+                <input
+                        type="date"
+                        name="endDate"
+                        id="endDate"
+                />
+                <span class="error-message" id="endDateError"></span>
+            </div>
+
+            <button type="submit">Add Warranty</button>
+        </form>
+    </div>
+</div>

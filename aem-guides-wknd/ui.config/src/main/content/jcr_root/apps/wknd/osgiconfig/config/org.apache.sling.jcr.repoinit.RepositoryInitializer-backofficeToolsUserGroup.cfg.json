@@ -1,0 +1,12 @@
+{
+  "scripts": [
+    "create group BACKOFFICE_TOOLS_USER_GROUP",
+
+    "set ACL for BACKOFFICE_TOOLS_USER_GROUP \n allow jcr:read on /libs\nend",
+
+    "set ACL for BACKOFFICE_TOOLS_USER_GROUP \n deny jcr:read on /apps restriction(rep:glob,/*)\n allow jcr:read on /apps restriction(rep:glob)\n allow jcr:read on /apps/backoffice-tools\nend",
+    "set ACL for BACKOFFICE_TOOLS_USER_GROUP \n allow jcr:read on /apps/cq\nend",
+
+    "set ACL for BACKOFFICE_TOOLS_USER_GROUP \n deny jcr:read on /etc restriction(rep:glob,/*)\n allow jcr:read on /etc restriction(rep:glob)\n deny jcr:read on /etc/nodesData restriction(rep:glob,/*)\n allow jcr:read on /etc/nodesData restriction(rep:glob)\n allow jcr:all on /etc/nodesData/warrantyData\nend"
+  ]
+}
