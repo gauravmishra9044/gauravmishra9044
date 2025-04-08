@@ -20,7 +20,7 @@ import java.io.IOException;
 public class SitemapServlet extends SlingAllMethodsServlet {
 
     @Reference
-    private SitemapGeneratorService sitemapGeneratorService;
+    private transient SitemapGeneratorService sitemapGeneratorService;
 
     /**
      * Get Method which calls service to generate sitemap, and save it on (/bin/generate-sitemap).

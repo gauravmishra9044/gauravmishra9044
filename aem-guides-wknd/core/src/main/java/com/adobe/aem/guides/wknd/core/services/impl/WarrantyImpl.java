@@ -98,6 +98,7 @@ public class WarrantyImpl implements WarrantyService {
     @Override
     public List<WarrantyModel> getWarranty(String type, String value, ResourceResolver resourceResolver) throws RepositoryException {
         List<WarrantyModel> warrantyData = new ArrayList<>();
+
         Resource parentResource = resourceResolver.getResource(parentNodePath);
 
         if (parentResource != null) {

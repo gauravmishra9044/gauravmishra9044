@@ -7,6 +7,6 @@ import javax.jcr.RepositoryException;
 import java.util.List;
 
 public interface WarrantyService {
-    public boolean setWarranty(WarrantyModel warrantyModel, ResourceResolver resourceResolver) throws RepositoryException;
+    boolean setWarranty(WarrantyModel warrantyModel, ResourceResolver resourceResolver) throws RepositoryException;
     List<WarrantyModel> getWarranty(String type, String value, ResourceResolver resourceResolver) throws RepositoryException;
 }
