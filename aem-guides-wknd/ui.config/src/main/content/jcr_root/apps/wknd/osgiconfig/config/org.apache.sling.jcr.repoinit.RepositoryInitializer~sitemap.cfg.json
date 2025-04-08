@@ -1,7 +1,7 @@
 {
   "scripts": [
     "create service user sitemap-service-user",
-    "set ACL for sitemap-service-user \n allow jcr:read, jcr:write on /var/sitemaps \n end",
+    "set ACL for sitemap-service-user \n allow jcr:all on /var/sitemaps \n end",
     "set ACL for sitemap-service-user \n allow jcr:read on /content/wknd \n end"
   ]
 }

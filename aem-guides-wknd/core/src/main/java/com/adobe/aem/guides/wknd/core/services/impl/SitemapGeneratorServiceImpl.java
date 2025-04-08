@@ -21,7 +21,7 @@ public class SitemapGeneratorServiceImpl implements SitemapGeneratorService {
     @Reference
     private ResourceResolverFactory resolverFactory;
 
-    private static final String SERVICE_USER = "sitemap-service-user";
+    private static final String SERVICE_USER = "sitemapService";
     private static final String PAGE_NOT_FOUND="<?xml version=\"1.0\" encoding=\"UTF-8\"?><error>Root page not found</error>";
     private static final String localHostLink="http://localhost:4502";
     private static final String LOGIN_FAIL= "Failed to login with system user:";

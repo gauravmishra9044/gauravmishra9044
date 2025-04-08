@@ -45,7 +45,7 @@ public class SitemapScheduler implements Runnable {
     public void run() {
         log.info("SimpleHardcodedScheduler RUN method executed");
         Map<String, Object> authMap = new HashMap<>();
-        authMap.put(ResourceResolverFactory.SUBSERVICE, "sitemap-service-user");
+        authMap.put(ResourceResolverFactory.SUBSERVICE, "sitemapService");
 
         try (ResourceResolver resolver = resolverFactory.getServiceResourceResolver(authMap)) {
             sitemapGeneratorService.generateSitemap(resolver);
